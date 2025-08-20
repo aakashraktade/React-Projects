@@ -1,18 +1,22 @@
-import "./App.css";
-import ContactForm from "./components/ContactForm/ContactForm";
-import ContactHeader from "./components/ContactHeader/ContactHeader";
-import Navigation from "./components/Navigation/Navigation";
+import { useState } from 'react'
+import './App.css'
+import Navigation from './Components/Navigation/Navigation';
+import ContactHeader from './Components/ContactHeader/ContactHeader';
+import ContactForm from './Components/ContactForm/ContactForm';
 
-function App() {
-  return (
+const App=()=>{
+  const [count,setCount]=useState(0);
+
+  return(
     <div>
-      <Navigation />
-      <main className="main_container">
-        <ContactHeader />
-        <ContactForm />
-      </main>
+      <Navigation/>
+      <div className='main_con'>
+      <ContactHeader/>
+      <ContactForm/>
+      </div>
+      
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,8 +1,11 @@
+import React from "react";
 import styles from "./ContactHeader.module.css";
+
 const ContactHeader = () => {
+  console.log(styles);
   return (
-    <div className={`${styles.contact_section}`}>
-      <h1>CONTACT US</h1>
+    <div className={styles.contact_section}>
+      <h1>Contact Us</h1>
       <p>
         LET’S CONNECT: WE’RE HERE TO HELP, AND WE’D LOVE TO HEAR FROM YOU!
         WHETHER YOU HAVE A QUESTION, COMMENT, OR JUST WANT TO CHAT , YOU CAN

@@ -1,10 +1,13 @@
+import React from "react";
+import { MdMessage } from "react-icons/md";
 import styles from "./Button.module.css";
-const Button = ({ isOutline, icon, text, ...rest }) => {
+
+const Button = (props) => {
+
+    const {isOutLine,icon,text,...rest}=props;
   return (
-    <button
-      {...rest}
-      className={isOutline ? styles.outline_btn : styles.primary_btn}
-    >
+    <button {...rest} className={isOutLine ?styles.outline_btn: styles.primary_btn}>
+     
       {icon}
       {text}
     </button>
